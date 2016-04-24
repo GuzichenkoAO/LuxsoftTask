@@ -14,6 +14,7 @@
         <jar-plugin.version>2.6</jar-plugin.version>
         <junit.version>4.12</junit.version>
         <mysql.version>5.1.38</mysql.version>
+        <mockito.version>1.9.5</mockito.version>
     </properties>
 
     <dependencies>
@@ -27,8 +28,14 @@
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+        </dependency>
 
-</dependencies>
+
+    </dependencies>
 
     <build>
         <plugins>
