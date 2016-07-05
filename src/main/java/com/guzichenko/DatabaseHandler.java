@@ -6,14 +6,13 @@ import java.sql.*;
 import java.util.ArrayList;
 
 /**
- * Created by Артем on 26.02.2016.
+ * Created by пїЅпїЅпїЅпїЅпїЅ on 26.02.2016.
  */
 public class DatabaseHandler {
 
+    private static String INSERT = "INSERT INTO line_statistic(longest_word, shortest_word, line_length, average_word_length)  VALUES(?,?,?,?)";
 
-    public static void lineStatSaver(ArrayList<LineStat> list) {
-
-        String INSERT = "INSERT INTO line_statistic(longest_word, shortest_word, line_length, average_word_length)  VALUES(?,?,?,?)";
+    static void lineStatSaver(ArrayList<LineStat> list) {
 
         try {
 
@@ -42,9 +41,7 @@ public class DatabaseHandler {
         }
     }
 
-    public static void fileStatSaver(ArrayList<FileStat> list){
-
-        String INSERT = "INSERT INTO file_statistic(longest_word, shortest_word, text_length, average_word_length)  VALUES(?,?,?,?)";
+    static void fileStatSaver(ArrayList<FileStat> list){
 
         try {
 
